@@ -1,0 +1,3 @@
+Microservices are composed of many small, autonomous services, each with their own configuration , rather than storing these configurations individually we can store all of them at a single place i.e in Git
+
+Centralized configuration is a pattern where the configuration for all services is managed in a central repository rather than being scattered across individual services. Each service pulls its configuration from the central repository on startup.
