@@ -1,0 +1,10 @@
+In a distributed environment, services need to communicate with each other. However, this is interservice communication. We also have use-cases where a client outside our domain wants to hit our services for the API. So, either we can expose the address of all our microservices which can be called by clients OR we can create a Service Gateway which routes the request to various microservices and responds to the clients.
+
+Creating a Gateway is much better approach here. There are two major advantages −
+
+The security for each individual services does not need to maintained.
+
+And, cross-cutting concerns, for example, addition of meta-information can be handled at a single place.
+
+Netflix Zuul and Spring Cloud Gateway are two well-known Cloud Gateways which are used to handle such situations. In this tutorial, we will use Spring Cloud Gateway.
+
