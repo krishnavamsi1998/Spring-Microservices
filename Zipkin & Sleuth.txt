@@ -1,0 +1,9 @@
+Zipkin is a very efficient tool for distributed tracing in the microservices ecosystem. Distributed tracing
+
+Let’s say from our application, we have to call 4 different services/components for a transaction. Herewith distributed tracing enabled, we can measure which component took how much time.
+
+Distributed tracing is useful during debugging when lots of underlying systems are involved and the application becomes slow in any particular situation. In such cases, we first need to identify which underlying service is actually slow. Once the slow service is identified, we can work to fix that issue. Distributed tracing helps in identifying that slow component in the ecosystem.
+
+Sleuth is another tool from the Spring cloud family. It is used to generate the trace id, span id 
+
+traceId: It is a unique Id assigned to the request and is the same across all the microservices. spanId: It is a unique Id assigned to each operation or microservice
